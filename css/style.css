@@ -59,17 +59,21 @@
       width: 1200px;
       padding-left: 15px;
       padding-right: 15px;
-      outline: 1px solid black;
+      margin-left: auto;
+      margin-right: auto;
+      
     }
    /* ------- HEADER--------------------шапка*/
    .header  {
-      outline: 1px solid black;
+     display: flex;
+     border-bottom: 1px solid #ECECEC;
+      
    }
    
    .logo {
     padding-top: 24px ;
     padding-bottom: 25px;
-   
+    margin-right: 93px;
    }
    .logo-style {
       color: #000000;
@@ -80,20 +84,26 @@
       letter-spacing: 0.03em;
    
    /* identical to box height */
-   position: absolute;
+   
    width: 145px;
    height: 31px;
+   
    }
    .logo-color {
       color: var(--brand-color);
    }
    /* header nav*/
+   .nav {
+     
+   }
    .nav-list{
       position: absolute;
       width: 281px;
       height: 16px;
       padding-top: 32px;
-      margin-left: 93px;
+      
+      display: flex;
+      gap: 50px;
    }
    .nav-link{
       color: var(--main-text-color);
@@ -101,6 +111,7 @@
       font-weight: 500;
       line-height: 1.14;
       letter-spacing: 0.02em;
+
    }
    .nav-link:hover,
    .nav-link:focus,
@@ -132,7 +143,9 @@
       color: var(--text-color-white);
       padding-top: 200px;
       padding-bottom: 200px;
-     
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
    }
    
    .hero-title {
@@ -147,7 +160,7 @@
       width: 696px;
       height: 120px;
       margin-bottom: 30px;
-      display:block;
+      
    
    }
    .hero-btn {
@@ -163,7 +176,7 @@
       /* identical to box height, or 188% */
    
    
-      align-items: center;
+      
       text-align: center;
       letter-spacing: 0.06em;
       width:216px;
@@ -181,7 +194,9 @@
    .special {
      padding-top: 94px;
      padding-bottom: 94px;
-   
+      display: flex;
+      gap: 30px;
+     
    }
    
    .special-list {
@@ -202,6 +217,7 @@
       /* or 171% */
       letter-spacing: 0.03em;
       margin-top: 0;
+      margin-bottom: 0;
    }
    
    /* main section we are DOING Чим ми займаємося */
@@ -216,6 +232,10 @@
       letter-spacing: 0.03em;
       color: var(--main-text-color);
       margin-bottom: 50px;
+   }
+   .doing-list {
+      display: flex;
+      justify-content: space-between;
    }
    /* main section our team Наша команда */
    
@@ -233,6 +253,8 @@
       margin-bottom: 50px;
    }
    .teamList {
+      display: flex;
+      justify-content: space-between;
    }
    .team-item {
       background-color:var(--white-fon-color);
@@ -306,7 +328,7 @@
    /*---------------------portfolio-----page 2-------------*/
    
    /* portfolio main section */
-   .main-portfolio {
+   .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
    }
@@ -338,15 +360,16 @@
      display:flex;
      margin-bottom: 34px;
      display:flex;
+     align-items: flex-start;
+     gap: 8px;
+     justify-content: center;
    }
    
-   .portfolio {
-      
-   }
+  
    .portfolio-list {
       display:flex;
       flex-wrap:wrap ;
-      justify-content: space-between;
+      gap: 30px;
    }
    .portfolio-item {
       width:370px;  
